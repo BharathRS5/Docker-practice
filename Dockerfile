@@ -5,5 +5,5 @@ LABEL NAME="Kowshik" \
       PROFILE=$NAME
 RUN echo "testing dockerfle $NAME" 
 EXPOSE 80
-#CMD [ "google.com" ] 
-ENTRYPOINT [ "ping", "-c3", "google.com" ]
+CMD [ "google.com" ] 
+ENTRYPOINT [ "ping", "-c3", ]
