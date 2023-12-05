@@ -4,5 +4,6 @@ ENV NAME=KOWSHIK
 LABEL NAME="Kowshik" \
       PROFILE=$NAME
 RUN echo "testin dockerfle $NAME" 
-EXPOSE 9090
-CMD [ "nginx", "-g", "daemon off;" ] 
+EXPOSE 80
+#CMD [ "nginx", "-g", "daemon off;" ] 
+ENTRYPOINT [ "nginx", "-g", "daemon off;" ]
