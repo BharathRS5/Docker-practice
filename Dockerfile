@@ -1,7 +1,7 @@
 FROM almalinux:8
 RUN yum install nginx -y
 ENV NAME=KOWSHIK
-LABEL NAME="SREENU" \
+LABEL NAME="Kowshik" \
       PROFILE=$NAME
 RUN echo "testin dockerfle $NAME" 
 EXPOSE 9090
