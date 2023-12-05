@@ -6,4 +6,4 @@ LABEL NAME="Kowshik" \
 RUN echo "testing dockerfle $NAME" 
 EXPOSE 80
 #CMD [ "nginx", "-g", "daemon off;" ] 
-ENTRYPOINT [ "ping", "-c3", "google.com;" ]
+ENTRYPOINT [ "ping", "-c3", "google.com" ]
