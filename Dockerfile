@@ -2,8 +2,8 @@ FROM almalinux:8
 RUN yum install nginx -y
 RUN useradd jaya
 USER jaya
-RUN echo "We are learning Docker instructions" > /tmp/hello.txt
 USER root
+RUN echo "We are learning Docker instructions" > /tmp/hello.txt
 CMD [ "nginx", "-g", "daemon off;" ]
 
 
