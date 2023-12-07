@@ -13,7 +13,8 @@ ADD https://www.dwsamplefiles.com/?dl_id=559 /tmp
 RUN echo "We are learning Docker instructions" > /tmp/hello.txt
 USER root
 #CMD [ "nginx", "-g", "daemon off;" ]
-ENTRYPOINT [ "ping", "-c3", "google.com" ]    
+CMD [ "facebook.com" ]
+ENTRYPOINT [ "ping", "-c3", ]    
 
 
 
