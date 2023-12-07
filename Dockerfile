@@ -3,6 +3,7 @@ RUN yum install nginx -y
 ENV USERNAME=SIVA
 ARG USERNAME=Kowshik
 RUN echo "Username is: ${USERNAME} and Tutor is ${TUTOR}"
+RUN echo "${USERNAME}"
 RUN useradd jaya
 USER jaya
 WORKDIR /tmp
