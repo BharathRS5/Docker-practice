@@ -3,6 +3,7 @@ RUN yum install nginx -y
 RUN useradd jaya
 USER jaya
 RUN echo "We are learning Docker instructions" > /tmp/hello.txt
+USER root
 CMD [ "nginx", "-g", "daemon off;" ]
 
 
