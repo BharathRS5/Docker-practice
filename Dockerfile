@@ -2,7 +2,7 @@ FROM almalinux:8
 RUN yum install nginx -y
 RUN useradd jaya
 USER jaya
-RUN echo "We are learning Docker instructions" > hello.txt
+RUN echo "We are learning Docker instructions" > /tmp/hello.txt
 
 
 # ENV NAME=KOWSHIK
