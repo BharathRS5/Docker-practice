@@ -4,6 +4,8 @@ RUN useradd jaya
 USER jaya
 WORKDIR /tmp
 COPY HTML.txt /usr/share/nginx/html
+ADD https://raw.githubusercontent.com/sivadevopsdaws74s/helm-charts/master/Chart.yaml /root
+ADD https://www.dwsamplefiles.com/?dl_id=559 /tmp
 RUN echo "We are learning Docker instructions" > /tmp/hello.txt
 USER root
 CMD [ "nginx", "-g", "daemon off;" ]
