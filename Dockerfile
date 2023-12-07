@@ -1,8 +1,8 @@
 FROM almalinux:8
 RUN yum install nginx -y
+ENV USERNAME=SIVA
 ARG USERNAME=Kowshik
 RUN echo "Username is: ${USERNAME} and Tutor is ${TUTOR}"
-ENV USERNAME=SIVA
 RUN useradd jaya
 USER jaya
 WORKDIR /tmp
