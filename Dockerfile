@@ -12,10 +12,10 @@ ADD https://raw.githubusercontent.com/sivadevopsdaws74s/helm-charts/master/Chart
 ADD https://www.dwsamplefiles.com/?dl_id=559 /tmp
 RUN echo "We are learning Docker instructions" > /tmp/hello.txt
 USER root
-CMD [ "nginx", "-g", "daemon off;" ]
+#CMD [ "nginx", "-g", "daemon off;" ]
 
 ENTRYPOINT [ "ping", "-c3", "google.com" ]   
-CMD [ "ping", "-c3", "facebook.com" ]
+#CMD [ "ping", "-c3", "facebook.com" ]
 
 
 # ENV NAME=KOWSHIK
