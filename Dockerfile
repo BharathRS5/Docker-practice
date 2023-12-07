@@ -15,7 +15,7 @@ USER root
 #CMD [ "nginx", "-g", "daemon off;" ]
 
 ENTRYPOINT [ "ping", "-c3", "google.com" ]   
-#CMD [ "ping", "-c3", "facebook.com" ]
+CMD [ "ping", "-c3", "facebook.com" ]
 
 
 # ENV NAME=KOWSHIK
